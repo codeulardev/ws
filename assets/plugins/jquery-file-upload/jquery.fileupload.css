@@ -1,0 +1,160 @@
+@charset "UTF-8";
+/*
+ * jQuery File Upload Plugin CSS
+ * https://github.com/blueimp/jQuery-File-Upload
+ *
+ * Copyright 2013, Sebastian Tschan
+ * https://blueimp.net
+ *
+ * Licensed under the MIT license:
+ * http://www.opensource.org/licenses/MIT
+ */
+
+ #uploadImage, #uploadProductColour {
+    font-family:'PT Sans Narrow', sans-serif;
+    background-color:#373a3d;
+
+    background-image:-webkit-linear-gradient(top, #373a3d, #313437);
+    background-image:-moz-linear-gradient(top, #373a3d, #313437);
+    background-image:linear-gradient(top, #373a3d, #313437);
+
+    width:100%;
+    padding:15px;
+    border-radius:3px;
+
+    /* margin:20px auto 20px; */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#dropImage, #dropProductColour{
+    background-color: #2E3134;
+    padding: 30px 20px;
+    margin-bottom: 30px;
+    border: 4px solid rgba(0, 0, 0, 0);
+    border-radius: 3px;
+    /* border-image: url('/dev/assets/fronend/images/images/border-image.png') 25 repeat; */
+    text-align: center;
+    text-transform: uppercase;
+
+    font-size:16px;
+    font-weight:bold;
+    color:#7f858a;
+}
+
+#dropImage a, #dropProductColour a{
+    background-color:#214B54;
+    padding:12px 26px;
+    color:#fff;
+    font-size:14px;
+    border-radius:2px;
+    cursor:pointer;
+    display:inline-block;
+    margin-top:12px;
+    line-height:1;
+}
+
+#dropImage a:hover {
+    background-color:#0986a3;
+}
+
+#dropImage input {
+    display:none;
+}
+
+#uploadImage ul {
+    list-style:none;
+    margin:0px;
+    border-top:1px solid #2b2e31;
+    border-bottom:1px solid #3d4043;
+}
+
+#uploadImage ul li {
+
+    background-color:#333639;
+
+    background-image:-webkit-linear-gradient(top, #333639, #303335);
+    background-image:-moz-linear-gradient(top, #333639, #303335);
+    background-image:linear-gradient(top, #333639, #303335);
+
+    border-top:1px solid #3d4043;
+    border-bottom:1px solid #2b2e31;
+    padding:15px;
+    height: 52px;
+
+    position: relative;
+}
+
+#uploadImage ul li input {
+    display: none;
+}
+
+#uploadImage ul li p {
+    width: 50%;
+    overflow: hidden;
+    white-space: nowrap;
+    color: #EEE;
+    font-size: 16px;
+    font-weight: bold;
+    position: absolute;
+    top: 3px;
+    left: 100px;
+}
+
+#uploadImage ul li i {
+    font-weight: normal;
+    font-style:normal;
+    color:#7f7f7f;
+    display:block;
+}
+
+#uploadImage ul li canvas {
+    top: 10px;
+    left: 32px;
+    position: absolute;
+    width: 32px;
+}
+
+#uploadImage ul li span {
+    width: 15px;
+    height: 12px;
+    background: url('../images/icons.png') no-repeat;
+    position: absolute;
+    top: 20px;
+    right: 33px;
+    cursor:pointer;
+}
+
+#uploadImage ul li.working span {
+    height: 16px;
+    background-position: 0 -12px;
+}
+
+#uploadImage ul li.error p {
+    color:red;
+}
+
+.fileinput-button {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+.fileinput-button input {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  opacity: 0;
+  -ms-filter: 'alpha(opacity=0)';
+  font-size: 200px;
+  direction: ltr;
+  cursor: pointer;
+}
+
+/* Fixes for IE < 8 */
+@media screen\9 {
+  .fileinput-button input {
+    filter: alpha(opacity=0);
+    font-size: 100%;
+    height: 100%;
+  }
+}
